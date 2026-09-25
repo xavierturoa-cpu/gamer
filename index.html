@@ -1,19 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="description" content="Drift District — a 3D browser drifting game with jumps and physics.">
-<title>Drift District 3D</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Drift</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="hud">
-  <div class="brand">DRIFT <b>DISTRICT</b><small>3D // PHYSICS</small></div>
-  <div class="stats"><span>SPEED <b id="speed">0</b> KM/H</span><span>DRIFT <b id="drift">0</b> m</span><span>SCORE <b id="score">0</b></span></div>
-  <div class="tip">WASD / ARROWS DRIVE · SPACE HANDBRAKE · R RESET</div>
-</div>
 <div id="game"></div>
-<div id="overlay"><div class="card"><div class="tag">FREE ROAM</div><h1>DRIFT<br><em>DISTRICT</em></h1><p>Throw the car sideways, hit the ramps, catch air and chain drifts for massive scores.</p><button id="start">START ENGINE</button></div></div>
+<div id="hud"><span id="speed">0</span> KM/H</div>
 <script type="module" src="game.js"></script>
 </body>
 </html>
