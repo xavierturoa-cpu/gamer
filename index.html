@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Gamer — a fast browser arcade game.">
+  <title>Gamer — Neon Rush</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <div><span class="eyebrow">GAMER</span><h1>Neon Rush</h1></div>
+      <button id="soundBtn" class="icon-btn" aria-label="Toggle sound">🔊</button>
+    </header>
+    <section class="hud">
+      <div><span>SCORE</span><strong id="score">0</strong></div>
+      <div><span>BEST</span><strong id="best">0</strong></div>
+      <div><span>SPEED</span><strong id="speed">1.0x</strong></div>
+    </section>
+    <div class="canvas-wrap">
+      <canvas id="game" width="900" height="560" aria-label="Neon Rush game"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="card">
+          <p class="eyebrow">ARCADE MODE</p>
+          <h2 id="overlayTitle">NEON RUSH</h2>
+          <p id="overlayText">Move with <b>WASD</b> or <b>arrow keys</b>.<br>Collect orbs. Dodge the red hunters.</p>
+          <button id="startBtn">PLAY NOW</button>
+        </div>
+      </div>
+    </div>
+    <footer>Desktop: WASD / arrows · Mobile: drag your ship · Survive as long as you can.</footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
